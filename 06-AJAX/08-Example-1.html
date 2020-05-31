@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/02-CSS/bootstrap-4.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-12 mb-4">
+            <h1 id="heading-1" class="bg-dark text-white text-center"></h1>
+        </div>
+        <div class="card-deck">
+            <div class="card border-success">
+                <div class="card-header text-center ">
+                    <h2>Card-1</h2>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Card-1 Title</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eligendi explicabo nihil est enim velit. Quod nemo, dignissimos, itaque minus recusandae ipsa ea, eligendi esse dicta repellat veritatis exercitationem porro.</p>
+                    <div class="new-button text-center ">
+                        <a href="" class="btn btn-primary btn-block">Go Somewhere</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card border-danger">
+                <div class="card-header text-center bg-danger text-white">
+                    <h2>Card-2</h2>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Card-2 Title</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eligendi explicabo nihil est enim velit. Quod nemo, dignissimos, itaque minus recusandae ipsa ea, eligendi esse dicta repellat veritatis exercitationem porro.</p>
+                    <div class="new-button text-center ">
+                        <a href="" class="btn btn-primary ">Go Somewhere</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-12 mt-4 text-center">
+            <button id="but1" class="btn btn-success">Click to add Topic Title</button>
+        </div>
+    </div>
+    <script src="/02-CSS/js/JQuery.js"></script>
+    <script src="/02-CSS/js/Popper.js"></script>
+    <script src="/02-CSS/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#but1").click(function() {
+                $("#heading-1").load("08-Example-1.txt");
+
+            });
+        });
+
+    </script>
+</body>
+
+</html>
